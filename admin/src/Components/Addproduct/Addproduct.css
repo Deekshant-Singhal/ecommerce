@@ -1,0 +1,134 @@
+/* Addproduct.css */
+
+.Addproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 780px;
+    height: 80vh;
+    margin: 5vh;
+    padding: 7vh;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.itemfield {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.itemfield p {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.itemfield input[type="text"], .add-product-selector {
+    padding: 10px;
+    font-size: 14px;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.itemfield label {
+    cursor: pointer;
+}
+
+.itemfield input[type="file"] {
+    display: none;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addbutton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-product-selector {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1280px) {
+    .Addproduct {
+        width: 70%;
+        padding: 5%;
+        height: auto;
+        margin: 0;
+    }
+
+    .price {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Addproduct {
+        width: 80%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    .price {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .itemfield {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Addproduct {
+        width: 90%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    .price {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .itemfield p {
+        font-size: 14px;
+    }
+
+    .add-product-selector {
+        width: 100%;
+    }
+}
